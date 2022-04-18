@@ -22,11 +22,16 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  gap: 32px;
+  gap: 16px;
 }
 
 .formwidth {
   width: 100%;
+}
+
+.formwidth1 {
+  width: 50%;
+  gap:32px
 }
 
 h1{

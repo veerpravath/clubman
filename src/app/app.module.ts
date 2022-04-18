@@ -8,6 +8,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { MaterialModule } from './modules/material/material.module';
 import { CardComponent } from './components/card/card.component';
 import { TabsComponent } from './components/tabs/tabs.component';
+import { OtherdetailcardComponent } from './components/otherdetailcard/otherdetailcard.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { TabsComponent } from './components/tabs/tabs.component';
     HeaderComponent,
     CardComponent,
     TabsComponent,
+    OtherdetailcardComponent,
   
   ],
   imports: [
