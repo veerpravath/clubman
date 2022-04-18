@@ -9,9 +9,21 @@ import { MaterialModule } from './modules/material/material.module';
 import { CardComponent } from './components/card/card.component';
 import { TabsComponent } from './components/tabs/tabs.component';
 
+
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, CardComponent, TabsComponent, ],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MaterialModule],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    CardComponent,
+    TabsComponent,
+  
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MaterialModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
