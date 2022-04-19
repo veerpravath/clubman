@@ -11,6 +11,7 @@ import { TabsComponent } from './components/tabs/tabs.component';
 import { OtherdetailcardComponent } from './components/otherdetailcard/otherdetailcard.component';
 import { SubscriptiondetailsComponent } from './components/subscriptiondetails/subscriptiondetails.component';
 import { CategoryconversionComponent } from './components/categoryconversion/categoryconversion.component';
+import { AdditionalmodalComponent } from './components/additionalmodal/additionalmodal.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { CategoryconversionComponent } from './components/categoryconversion/cat
     OtherdetailcardComponent,
     SubscriptiondetailsComponent,
     CategoryconversionComponent,
+    AdditionalmodalComponent,
   ],
   imports: [
     BrowserModule,
