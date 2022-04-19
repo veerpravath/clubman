@@ -9,7 +9,8 @@ import { MaterialModule } from './modules/material/material.module';
 import { CardComponent } from './components/card/card.component';
 import { TabsComponent } from './components/tabs/tabs.component';
 import { OtherdetailcardComponent } from './components/otherdetailcard/otherdetailcard.component';
-
+import { SubscriptiondetailsComponent } from './components/subscriptiondetails/subscriptiondetails.component';
+import { CategoryconversionComponent } from './components/categoryconversion/categoryconversion.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { OtherdetailcardComponent } from './components/otherdetailcard/otherdeta
     CardComponent,
     TabsComponent,
     OtherdetailcardComponent,
-  
+    SubscriptiondetailsComponent,
+    CategoryconversionComponent,
   ],
   imports: [
     BrowserModule,

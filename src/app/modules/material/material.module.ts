@@ -7,17 +7,19 @@ import {MatCardModule} from '@angular/material/card';
 import {MatTabsModule} from '@angular/material/tabs';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 
-const material =[
-     MatIconModule,
-     MatToolbarModule,
-     MatButtonModule,
-     MatCardModule,
-     MatTabsModule,
-      MatFormFieldModule,
-      MatInputModule,
-]
+const material = [
+  MatIconModule,
+  MatToolbarModule,
+  MatButtonModule,
+  MatCardModule,
+  MatTabsModule,
+  MatFormFieldModule,
+  MatInputModule,
+  MatSlideToggleModule,
+];
 
 @NgModule({
   imports: [
