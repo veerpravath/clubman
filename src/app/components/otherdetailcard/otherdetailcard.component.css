@@ -11,7 +11,7 @@
 
 .cards {
   width: 100%;
-   display: flex;
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -30,26 +30,26 @@
 }
 
 .formwidth1 {
-  width: 50%;
-  gap:32px
+  width: 49.5%;
+  gap: 32px;
 }
 
-h1{
+h1 {
   font-size: 1.8rem;
   font-weight: 500;
-  color: #3F51B5;
+  color: #3f51b5;
   margin-bottom: 30px;
 }
 
-.buttons{
+.buttons {
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
-  gap:16px;
+  gap: 16px;
 }
 
-.mat-icon{
+.mat-icon {
   font-size: 21px;
 }
