@@ -23,3 +23,10 @@ h1 {
   color: #3f51b5;
   margin-bottom: 30px;
 }
+
+.toggleswitch {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
