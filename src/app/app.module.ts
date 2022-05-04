@@ -12,6 +12,7 @@ import { OtherdetailcardComponent } from './components/otherdetailcard/otherdeta
 import { SubscriptiondetailsComponent } from './components/subscriptiondetails/subscriptiondetails.component';
 import { CategoryconversionComponent } from './components/categoryconversion/categoryconversion.component';
 import { AdditionalmodalComponent } from './components/additionalmodal/additionalmodal.component';
+import { ClubcontactdetailsComponent } from './components/clubcontactdetails/clubcontactdetails.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { AdditionalmodalComponent } from './components/additionalmodal/additiona
     SubscriptiondetailsComponent,
     CategoryconversionComponent,
     AdditionalmodalComponent,
+    ClubcontactdetailsComponent,
   ],
   imports: [
     BrowserModule,

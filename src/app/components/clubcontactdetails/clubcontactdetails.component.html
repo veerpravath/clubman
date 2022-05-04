@@ -1,0 +1,129 @@
+<div class="cards">
+  <mat-card class="cardwidth">
+    <h1>Club Contact Details</h1>
+    <div class="row">
+      <div class="spacingone">
+        <mat-form-field appearance="outline" class="formwidth">
+          <mat-label>Company Name *</mat-label>
+          <input matInput />
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="formwidth">
+          <mat-label>Address 1 *</mat-label>
+          <input matInput />
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="formwidth">
+          <mat-label>Address 2 *</mat-label>
+          <input matInput />
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="formwidth">
+          <mat-label>Address 3 *</mat-label>
+          <input matInput />
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="formwidth">
+          <mat-label>Gst No *</mat-label>
+          <input matInput />
+        </mat-form-field>
+      </div>
+
+      <div class="dropzone">
+        <div class="imagediv">
+          <img [src]="url" height="300" width="300" />
+        </div>
+        <div class="dropzone-text">
+          <input matInput />
+          <input type="file" (change)="onFileChange($event)" />
+       </div>
+      </div>
+    </div>
+  </mat-card>
+</div>
+
+<div class="cards">
+  <mat-card class="cardwidth">
+    <h1>Club Details</h1>
+    <div class="spacing">
+      <mat-form-field appearance="outline" class="formwidth">
+        <mat-label>Bill Days *</mat-label>
+        <input matInput type="number" />
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="formwidth">
+        <mat-label>Account Process *</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let club of clubDetails" [value]="club.value">
+            {{ club.viewValue }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="spacing">
+      <mat-form-field appearance="outline" class="formwidth">
+        <mat-label>Due Process *</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let club of clubDetails" [value]="club.value">
+            {{ club.viewValue }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="formwidth">
+        <mat-label>Due Days *</mat-label>
+        <input matInput type="number" />
+      </mat-form-field>
+    </div>
+    <div class="spacing">
+      <mat-form-field appearance="outline" class="formwidth">
+        <mat-label>Due Percentage *</mat-label>
+        <input matInput type="number" />
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="formwidth">
+        <mat-label>Senior Citizen Age*</mat-label>
+        <input matInput type="number" />
+      </mat-form-field>
+    </div>
+
+    <div class="spacing">
+      <mat-form-field appearance="outline" class="formwidth">
+        <mat-label>SMS *</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let club of clubDetails" [value]="club.value">
+            {{ club.viewValue }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="formwidth">
+        <mat-label>SMS Outstanding Amount *</mat-label>
+        <input matInput type="number" />
+      </mat-form-field>
+    </div>
+
+    <div class="spacing">
+      <mat-form-field appearance="outline" class="formwidth">
+        <mat-label>Round off Charge Code(debit)</mat-label>
+        <input matInput type="number" />
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="formwidth">
+        <mat-label>Round off Charge Code(debit)</mat-label>
+        <input matInput type="number" />
+      </mat-form-field>
+    </div>
+
+    <div class="spacing">
+      <mat-form-field appearance="outline" class="formwidth">
+        <mat-label>Function Coupon Charge Code(credit)</mat-label>
+        <input matInput type="number" />
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="formwidth">
+        <mat-label> Function Coupon Charge Code(debit)</mat-label>
+        <input matInput type="number" />
+      </mat-form-field>
+    </div>
+  </mat-card>
+</div>
+
+<div class="buttons">
+  <button mat-raised-button color="primary">
+    <mat-icon>save </mat-icon>&nbsp;Save
+  </button>
+  <button mat-raised-button color="primary">
+    <mat-icon>restart_alt</mat-icon> Clear
+  </button>
+</div>
