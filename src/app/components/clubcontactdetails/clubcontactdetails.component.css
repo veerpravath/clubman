@@ -22,7 +22,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  gap: 32px;
+  gap: 8px;
 }
 
 .spacing1 {
@@ -48,8 +48,9 @@ h1 {
   flex-direction: row;
   align-items: flex-end;
   justify-content: flex-end;
-  gap: 18px;
+  gap: 16px;
   width: 90%;
+  padding-bottom: 16px;
 }
 
 .spacingone {
@@ -73,7 +74,7 @@ h1 {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  gap: 32px;
+  gap: 8px;
 }
 
 .dropzone-text {
@@ -89,26 +90,31 @@ h1 {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  /* .formwidth {
-    width: 100%;
-  }
-  .spacing {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  } */
+ .row{
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+ }
+ .spacing{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+ }
+ .buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 16px;
+}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  /* .formwidth {
-    width: 100%;
-  }
-  .spacing {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  } */
+ .row{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+ }
+  .spacing{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+ }
 }
